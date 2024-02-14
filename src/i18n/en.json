@@ -1,0 +1,22 @@
+{
+  "SEO_TITLE": "Pol Cortés - Web Developer",
+  "SEO_DESCRIPTION": "I'm a junior web developer and programmer open to work. I really love frontend, I use to develop my web pages with HTML, CSS, JavaScript, Astro and Tailwind.",
+  "SEO_KEYWORDS": "desarrollador web, programador web, maquetador web, html, css, javascript, jquery, tailwind, astro",
+  "INTRO_TITLE_1": "Hi, I'm",
+  "INTRO_TITLE_2": "Pol Cortés,",
+  "INTRO_TITLE_3": "Web Developer.",
+
+  "MENU_ABOUT": "About me",
+  "MENU_EXPERIENCE": "Experience",
+  "MENU_PROJECTS": "Projects",
+  "MENU_CONTACT": "Contact",
+
+  "404_TITLE": "404",
+  "404_DESCRIPTION_1": "It seems that the page you were looking for doesn't exist...",
+  "404_DESCRIPTION_2": "Go back to the main page to see the content of this website!",
+  "GO_HOME_PAGE": "Go back to the home page",
+
+  "ABOUT_ME_DESCRIPTION_1": "Actualmente estudiante de Desarrollo de Aplicaciones Web. Comencé estudiando artes, pero tras acabar el bachiller, me pasé al mundo de la Programación, pues ambos mundos siempre me han encantado.",
+  "ABOUT_ME_DESCRIPTION_2": "No quería dejar de lado uno de ellos, así que me propuse aprender Programación Web y que mis hobbies sean la parte dedicada a lo artístico.",
+  "ABOUT_ME_DESCRIPTION_3": "Cuento con experiencia desarrollando páginas en una Agencia de Diseño y Desarrollo Web, en la que he maquetado diversas landings y he aprendido un montón sobre la optimización del SEO y lo he puesto en práctica."
+}

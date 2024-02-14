@@ -1,0 +1,22 @@
+---
+// i18n
+import { getI18N } from '../i18n/'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<a href={'/' + (currentLocale === 'es' ? '' : currentLocale)}>{i18n["GO_HOME_PAGE"]}</a>
+
+<style>
+  a {
+    color: white;
+    text-decoration: underline 3px;
+    font-size: 20px;
+    font-family: 'Montserrat Variable', sans-serif;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+</style>

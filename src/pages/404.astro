@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+// i18n
+import { getI18N } from '../i18n/'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<Layout title="404 | Pol Cortés", description={i18n.SEO_DESCRIPTION}, keywords={i18n.SEO_KEYWORDS}>
+  <main>
+    <h1>{i18n['404_TITLE']}</h1>
+    <div>{i18n['404_DESCRIPTION_1']}</div>
+    <div>{i18n['404_DESCRIPTION_2']}</div>
+
+    <a href='/'>{i18n['GO_HOME_PAGE']}</a>
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'Source Code Pro Variable', monospace;
+    font-weight: 900;
+    font-size: 120px;
+    letter-spacing: -.05ch;
+    margin: 0 0 10px 0;
+    font-weight: 900;
+    color: transparent;
+		-webkit-text-stroke: 3px white;
+  }
+
+  div {
+    color: white;
+    font-family: 'Montserrat Variable', sans-serif;
+    font-size: 20px;
+  }
+
+  a {
+    font-family: 'Montserrat Variable', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: underline 3px white;
+
+    transition: color .3s, text-decoration .3s;
+  }
+
+  a:hover {
+    text-decoration: underline 3px #2A8FBB;
+    color: #2A8FBB;
+  }
+</style>

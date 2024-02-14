@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+import GoHome from './GoHome.astro'
+
+// i18n
+import { getI18N } from '../i18n/'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<Layout title={i18n.SEO_TITLE}, description={i18n.SEO_DESCRIPTION}, keywords={i18n.SEO_KEYWORDS}>
+  <GoHome />
+
+  <main>
+    <h1 transition:name="about-title">{i18n.MENU_ABOUT}</h1>
+
+    <section>
+      <p>{i18n.ABOUT_ME_DESCRIPTION_1}</p>
+      <p>{i18n.ABOUT_ME_DESCRIPTION_2}</p>
+      <p>{i18n.ABOUT_ME_DESCRIPTION_3}</p>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+  	font-family: 'Source Code Pro Variable', monospace;
+		font-weight: 900;
+		font-size: 90px;
+		letter-spacing: -.05ch;
+		margin: 0;
+		font-weight: 900;
+    color: white;
+	}
+
+  p {
+    font-family: 'Montserrat Variable', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    max-width: 70ch;
+  }
+</style>

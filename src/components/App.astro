@@ -1,0 +1,174 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Components
+import LanguagePicker from '../components/LanguagePicker.astro'
+import SocialPill from './SocialPill.astro'
+
+// Icons
+import LinkedIn from '../components/icons/LinkedinIcon.astro'
+import GitHub from '../components/icons/GithubIcon.astro'
+
+// i18n
+import { getI18N } from '../i18n/'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<Layout title={i18n.SEO_TITLE}, description={i18n.SEO_DESCRIPTION}, keywords={i18n.SEO_KEYWORDS}>
+  <LanguagePicker />
+
+	<main>
+		<section class="hero">
+      <div>
+  			<div>
+          <div class="social-pills">
+            <SocialPill title='LinkedIn', href='https://www.linkedin.com/in/pol-cort%C3%A9s-757b69285/', color='#0A66C2'>
+              <LinkedIn slot="icon" />
+            </SocialPill>
+            
+            <SocialPill title='GitHub', href='https://github.com/polcortes' color='#E6EDF3'>
+              <GitHub slot="icon" />
+            </SocialPill>
+          </div>
+
+          <h1>
+            {i18n.INTRO_TITLE_1}
+            <br />
+            <span class="shine">
+              {i18n.INTRO_TITLE_2}
+            </span>
+            <br />
+            {i18n.INTRO_TITLE_3}
+          </h1>
+        </div>
+
+        <ul class="navigator">
+          <li><a href="/aboutme" transition:name="about-title">{i18n.MENU_ABOUT}</a></li>
+          <li><a href="/experience">{i18n.MENU_EXPERIENCE}</a></li>
+          <li><a href="/projects">{i18n.MENU_PROJECTS}</a></li>
+          <li><a href="/contact">{i18n.MENU_CONTACT}</a></li>
+        </ul>
+      </div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+  a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+  }
+
+  a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+  }
+
+	h1 {
+  	font-family: 'Source Code Pro Variable', monospace;
+		font-weight: 900;
+		font-size: 90px;
+		letter-spacing: -.05ch;
+		margin: 0;
+		color: white;
+	}
+
+  .hero > div > div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .shine {
+    text-decoration: underline 7px white;
+
+    background: linear-gradient(to right, #4c8435 20%, #82bd69 40%, #82bd69 60%, #4c8435 80%);
+    background-size: 200% auto;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 2.5s linear infinite;
+  }
+
+  @keyframes shine {
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+	main {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+  .hero {
+    height: 100vh;
+		padding: 40px;
+    box-sizing: border-box;
+  }
+
+  .hero > div {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    position: relative;
+    height: 100%;
+  }
+
+	.navigator {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 120px;
+    color: white;
+    box-sizing: border-box;
+
+    position: absolute;
+    right: 140px;
+    top: 0;
+    bottom: 0;
+    margin-block: auto;
+    height: fit-content;
+
+    perspective: 100px;
+  }
+
+  .navigator > li {
+    text-align: right;
+    font-family: 'Source Code Pro Variable', monospace;
+		font-weight: 900;
+    color: transparent;
+    transform-style: preserve-3d;
+    transform: rotateY(-4deg);
+
+    transition: transform .5s, color .5s;
+  }
+
+  .navigator > li > a,
+  .navigator > li > a:visited {
+		-webkit-text-stroke: 3px white;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .navigator > li:hover {
+    transform: rotateY(-3deg);
+    color: white;
+    cursor: pointer;
+  }
+
+  .social-pills {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+</style>

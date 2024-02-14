@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string;
+  href: string;
+  color: string;
+}
+
+const { title, href, color } = Astro.props
+
+const pillColor = color
+---
+
+<a href={href} target="_blank">
+  <slot name="icon" />
+  <span>{title}</span>
+</a>
+
+<style define:vars={{ pillColor }}>
+  a {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    color: white;
+    text-decoration: underline 1px transparent;
+    font-family: 'Montserrat Variable', sans-serif;
+    background-color: rgb(27, 27, 27);
+    width: fit-content;
+    padding: 7px 10px;
+    border-radius: 20px;
+
+    transition: text-decoration .3s, color .3s, background-color .3s;
+  }
+
+  a:hover {
+    text-decoration: underline 1px var(--pillColor);
+    color: var(--pillColor);
+    background-color: rgb(31, 31, 31);
+  }
+</style>
