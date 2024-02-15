@@ -11,9 +11,16 @@ import GitHub from '../components/icons/GithubIcon.astro'
 
 // i18n
 import { getI18N } from '../i18n/'
+import { getRelativeLocaleUrl } from 'astro:i18n';
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
+
+const locale = currentLocale || 'es'
+const getAboutMeURL = getRelativeLocaleUrl(locale, '/aboutme')
+const getExperienceURL = getRelativeLocaleUrl(locale, '/experience')
+const getProjectsURL = getRelativeLocaleUrl(locale, '/projects')
+const getContactURL = getRelativeLocaleUrl(locale, '/contact')
 ---
 
 <Layout title={i18n.SEO_TITLE}, description={i18n.SEO_DESCRIPTION}, keywords={i18n.SEO_KEYWORDS}>
@@ -45,10 +52,10 @@ const i18n = getI18N({ currentLocale })
         </div>
 
         <ul class="navigator">
-          <li><a href="/aboutme" transition:name="about-title">{i18n.MENU_ABOUT}</a></li>
-          <li><a href="/experience">{i18n.MENU_EXPERIENCE}</a></li>
-          <li><a href="/projects">{i18n.MENU_PROJECTS}</a></li>
-          <li><a href="/contact">{i18n.MENU_CONTACT}</a></li>
+          <li><a href={getAboutMeURL} transition:name="about-title">{i18n.MENU_ABOUT}</a></li>
+          <li><a href={getExperienceURL}>{i18n.MENU_EXPERIENCE}</a></li>
+          <li><a href={getProjectsURL}>{i18n.MENU_PROJECTS}</a></li>
+          <li><a href={getContactURL}>{i18n.MENU_CONTACT}</a></li>
         </ul>
       </div>
 		</section>

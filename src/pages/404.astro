@@ -2,10 +2,14 @@
 import Layout from '../layouts/Layout.astro'
 
 // i18n
+import { getRelativeLocaleUrl } from 'astro:i18n'
 import { getI18N } from '../i18n/'
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
+
+const locale = currentLocale || 'es'
+const getIndexURL = getRelativeLocaleUrl(locale, '/')
 ---
 
 <Layout title="404 | Pol Cortés", description={i18n.SEO_DESCRIPTION}, keywords={i18n.SEO_KEYWORDS}>
@@ -14,7 +18,7 @@ const i18n = getI18N({ currentLocale })
     <div>{i18n['404_DESCRIPTION_1']}</div>
     <div>{i18n['404_DESCRIPTION_2']}</div>
 
-    <a href='/'>{i18n['GO_HOME_PAGE']}</a>
+    <a href={getIndexURL}>{i18n['GO_HOME_PAGE']}</a>
   </main>
 </Layout>
 
