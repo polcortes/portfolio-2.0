@@ -32,6 +32,12 @@ const { title, description, keywords } = Astro.props;
 <style is:global>
 	html {
 		scroll-behavior: smooth;
+		scrollbar-color: white black;
+		-webkit-scrollbar-color: white black;
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-radius: 15px;
 	}
 
 	body {

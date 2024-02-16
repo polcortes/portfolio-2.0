@@ -18,5 +18,13 @@
 
   "ABOUT_ME_DESCRIPTION_1": "Actualment sóc estudiant de Desenvolupament d'Aplicacions Web (DAW). Vaig començar estudiant arts, però després d'acabar el batxillerat, em vaig passar al món de la Programació, ja que tots dos mons sempre m'han encantat.",
   "ABOUT_ME_DESCRIPTION_2": "No volia abandonar cap dels dos, així que em vaig proposar aprendre Programació Web i que els meus hobbies siguin la part dedicada a l'artístic.",
-  "ABOUT_ME_DESCRIPTION_3": "Tinc experiència desenvolupant pàgines web a una Agència de Disseny i Desenvolupament Web, on he maquetat diverses landings i he après molt sobre l'optimització del SEO i l'he posat en pràctica."
+  "ABOUT_ME_DESCRIPTION_3": "Tinc experiència desenvolupant pàgines web a una Agència de Disseny i Desenvolupament Web, on he maquetat diverses landings i he après molt sobre l'optimització del SEO i l'he posat en pràctica.",
+
+  "PROJECTS_SEO_TITLE": "Projectes - Pol Cortés",
+  "PROJECTS_SEO_DESCRIPTION": "Aquí trobaràs projectes que he realitzat fins ara.",
+  "PROJECTS_VISIT": "Visita la pàgina web",
+  "PROJECTS_F5_TITLE": "F5 Futsal - Landing",
+  "PROJECTS_F5_DESCRIPTION": "Landing page per a un club de futbol sala. La pàgina està maquetada amb HTML, CSS y JQuery, utilizant el plugin de Wordpress \"Elementor\". A més, està optimitzada per a SEO i és responsive.",
+  "PROJECTS_SEVERAL_TITLE": "Several.pro - SEO i gestió de Wordpress",
+  "PROJECTS_SEVERAL_DESCRIPTION": "Vaig millorar el SEO de la pàgina d'aquesta empresa arreglant la semàntica del DOM, afegint scripts específics de schema.org i creant meta descripcions coherents per a cada pàgina amb el plugin YoastSEO de Wordpress. A més, vaig implementar i corregir algunes seccions."
 }

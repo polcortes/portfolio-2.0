@@ -1,0 +1,80 @@
+---
+interface Props {
+  href: string;
+  anchorTitle: string;
+  imgSrc: string;
+  imgAlt: string;
+  imgTitle: string;
+  title: string;
+  description: string;
+  color: string;
+}
+
+const { href, anchorTitle, imgSrc, imgAlt, imgTitle, title, description, color } = Astro.props;
+---
+
+<article>
+  <a 
+    href={href} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    title={anchorTitle}
+  >
+    <img
+      src={imgSrc}
+      alt={imgAlt} 
+      title={imgTitle}
+    />
+    <h2>
+      {title}
+    </h2>
+    <p>
+      {description}
+    </p>
+  </a>
+</article>
+
+<style define:vars={{ color }}>
+  article {
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(5, 5, 5);
+    -webkit-box-shadow: 0px 0px 28px -11px var(--color);
+    -moz-box-shadow: 0px 0px 28px -11px var(--color);
+    box-shadow: 0px 0px 28px -11px var(--color);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  article:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat Variable', sans-serif;
+    display: block;
+  }
+
+  h2, p {
+    padding-inline: 20px;
+  }
+
+  h2 {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  p {
+    margin: 10px 0 25px 0;
+  }
+</style>

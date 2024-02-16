@@ -53,9 +53,9 @@ const getContactURL = getRelativeLocaleUrl(locale, '/contact')
 
         <ul class="navigator">
           <li><a href={getAboutMeURL} transition:name="about-title">{i18n.MENU_ABOUT}</a></li>
-          <li><a href={getExperienceURL}>{i18n.MENU_EXPERIENCE}</a></li>
-          <li><a href={getProjectsURL}>{i18n.MENU_PROJECTS}</a></li>
-          <li><a href={getContactURL}>{i18n.MENU_CONTACT}</a></li>
+          <li><a href={getExperienceURL} transition:name="experience-title">{i18n.MENU_EXPERIENCE}</a></li>
+          <li><a href={getProjectsURL} transition:name="projects-title">{i18n.MENU_PROJECTS}</a></li>
+          <li><a href={getContactURL} transition:name="contact-title">{i18n.MENU_CONTACT}</a></li>
         </ul>
       </div>
 		</section>

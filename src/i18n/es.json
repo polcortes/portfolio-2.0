@@ -1,5 +1,5 @@
 {
-  "SEO_TITLE": "Pol Cortés - Desarrollador web",
+  "SEO_TITLE": "Pol Cortés - Desarrollador y programador web",
   "SEO_DESCRIPTION": "Soy un desarrollador y programador web junior listo para adentrarse en el mundo laboral. Me encanta maquetar páginas web con HTML, CSS, JavaScript, JQuery y Tailwind.",
   "SEO_KEYWORDS": "desarrollador web, programador web, maquetador web, html, css, javascript, jquery, tailwind",
   "INTRO_TITLE_1": "Hola, soy",
@@ -16,7 +16,16 @@
   "404_DESCRIPTION_2": "¡Vuelve a la página principal para ver el contenido de esta web!",
   "GO_HOME_PAGE": "Volver a inicio",
 
+  "ABOUT_ME_SEO_TITLE": "Sobre mí - Pol Cortés",
   "ABOUT_ME_DESCRIPTION_1": "Actualmente soy estudiante de Desarrollo de Aplicaciones Web. Comencé estudiando artes, pero tras acabar el bachiller, me pasé al mundo de la Programación, pues ambos mundos siempre me han encantado.",
   "ABOUT_ME_DESCRIPTION_2": "No quería dejar de lado uno de ellos, así que me propuse aprender Programación Web y que mis hobbies sean la parte dedicada a lo artístico.",
-  "ABOUT_ME_DESCRIPTION_3": "Cuento con experiencia desarrollando páginas en una Agencia de Diseño y Desarrollo Web, en la que he maquetado diversas landings y he aprendido un montón sobre la optimización del SEO y lo he puesto en práctica."
+  "ABOUT_ME_DESCRIPTION_3": "Cuento con experiencia desarrollando páginas en una Agencia de Diseño y Desarrollo Web, en la que he maquetado diversas landings y he aprendido un montón sobre la optimización del SEO y lo he puesto en práctica.",
+
+  "PROJECTS_SEO_TITLE": "Proyectos - Pol Cortés",
+  "PROJECTS_SEO_DESCRIPTION": "Aquí encontrarás algunos de los proyectos que he realizado.",
+  "PROJECTS_VISIT": "Visita la página web",
+  "PROJECTS_F5_TITLE": "F5 Futsal - Landing",
+  "PROJECTS_F5_DESCRIPTION": "Landing page para un club de fútbol sala. Realicé la maquetación y optimización del SEO.",
+  "PROJECTS_SEVERAL_TITLE": "Several.pro - SEO y gestión de Wordpress",
+  "PROJECTS_SEVERAL_DESCRIPTION": "Mejoré el SEO de la página de esta empresa arreglando la semántica del DOM, añadiendo scripts específicos de schema.org y creando meta descripciones coherentes para cada página con el plugin YoastSEO de Wordpress. Además, implementé y corregí algunas secciones."
 }

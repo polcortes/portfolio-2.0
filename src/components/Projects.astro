@@ -1,0 +1,90 @@
+---
+// Fonts
+import '@fontsource-variable/source-code-pro'
+
+// Layouts
+import Layout from '../layouts/Layout.astro'
+
+// Components
+import ProjectCard from './ProjectCard.astro'
+import GoHome from './GoHome.astro'
+
+// i18n
+import { getI18N } from '../i18n/'
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<Layout title={i18n.PROJECTS_SEO_TITLE} description={i18n.PROJECTS_SEO_DESCRIPTION} keywords={i18n.SEO_KEYWORDS}>
+  <GoHome />
+  
+  <main>
+    <h1 transition:name="projects-title">{i18n.MENU_PROJECTS}</h1>
+
+    <ul>
+      <li>
+        <ProjectCard href="https://several.pro/" anchorTitle={i18n.PROJECTS_VISIT} imgSrc='https://pol-cortes.netlify.app/imgs/projects/several.pro.webp' imgAlt='Mock-up Several' imgTitle='Mock-up Several' title={i18n.PROJECTS_SEVERAL_TITLE} description={i18n.PROJECTS_SEVERAL_DESCRIPTION} color="#03D69A" />
+      </li>
+      <li>
+        <ProjectCard href="https://f5futsal.com/" anchorTitle={i18n.PROJECTS_VISIT} imgSrc='https://pol-cortes.netlify.app/imgs/projects/f5futsal.webp' imgAlt='Mock-up F5 Futsal' imgTitle='Mock-up F5 Futsal' title={i18n.PROJECTS_F5_TITLE} description={i18n.PROJECTS_F5_DESCRIPTION} color="#510F5E" />
+      </li>
+      <li>
+        <ProjectCard href="https://f5futsal.com/" anchorTitle={i18n.PROJECTS_VISIT} imgSrc='https://pol-cortes.netlify.app/imgs/projects/f5futsal.webp' imgAlt='Mock-up F5 Futsal' imgTitle='Mock-up F5 Futsal' title={i18n.PROJECTS_F5_TITLE} description={i18n.PROJECTS_F5_DESCRIPTION} color="#510F5E" />
+      </li>
+      <li>
+        <ProjectCard href="https://several.pro/" anchorTitle={i18n.PROJECTS_VISIT} imgSrc='https://pol-cortes.netlify.app/imgs/projects/several.pro.webp' imgAlt='Mock-up Several' imgTitle='Mock-up Several' title={i18n.PROJECTS_SEVERAL_TITLE} description={i18n.PROJECTS_SEVERAL_DESCRIPTION} color="#03D69A" />
+      </li>
+      <li>
+        <ProjectCard href="https://f5futsal.com/" anchorTitle={i18n.PROJECTS_VISIT} imgSrc='https://pol-cortes.netlify.app/imgs/projects/f5futsal.webp' imgAlt='Mock-up F5 Futsal' imgTitle='Mock-up F5 Futsal' title={i18n.PROJECTS_F5_TITLE} description={i18n.PROJECTS_F5_DESCRIPTION} color="#510F5E" />
+      </li>
+      <li>
+        <ProjectCard href="https://f5futsal.com/" anchorTitle={i18n.PROJECTS_VISIT} imgSrc='https://pol-cortes.netlify.app/imgs/projects/f5futsal.webp' imgAlt='Mock-up F5 Futsal' imgTitle='Mock-up F5 Futsal' title={i18n.PROJECTS_F5_TITLE} description={i18n.PROJECTS_F5_DESCRIPTION} color="#510F5E" />
+      </li>
+      <li>
+        <ProjectCard href="https://f5futsal.com/" anchorTitle={i18n.PROJECTS_VISIT} imgSrc='https://pol-cortes.netlify.app/imgs/projects/f5futsal.webp' imgAlt='Mock-up F5 Futsal' imgTitle='Mock-up F5 Futsal' title={i18n.PROJECTS_F5_TITLE} description={i18n.PROJECTS_F5_DESCRIPTION} color="#510F5E" />
+      </li>
+      <li>
+        <ProjectCard href="https://several.pro/" anchorTitle={i18n.PROJECTS_VISIT} imgSrc='https://pol-cortes.netlify.app/imgs/projects/several.pro.webp' imgAlt='Mock-up Several' imgTitle='Mock-up Several' title={i18n.PROJECTS_SEVERAL_TITLE} description={i18n.PROJECTS_SEVERAL_DESCRIPTION} color="#03D69A" />
+      </li>
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+		padding: 40px;
+  }
+
+  h1 {
+    font-family: 'Source Code Pro Variable', monospace;
+		font-weight: 900;
+		font-size: 90px;
+		letter-spacing: -.05ch;
+		margin: 0;
+		font-weight: 900;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    column-count: 3;
+    gap: 40px;
+    max-width: 1300px;
+  }
+
+  li {
+    break-inside: avoid;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+  }
+</style>

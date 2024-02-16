@@ -18,5 +18,13 @@
 
   "ABOUT_ME_DESCRIPTION_1": "At the moment I'm studying Web Development. I started studying arts, but after finishing high school, I moved to the world of Programming, as I have always loved both worlds.",
   "ABOUT_ME_DESCRIPTION_2": "I didn't want to leave aside one of them, so I set out to learn Web Programming and that my hobbies are the part dedicated to the artistic.",
-  "ABOUT_ME_DESCRIPTION_3": "I have experience developing pages in a Web Design and Development Agency, where I have developed various landings and have learned a lot about SEO optimization and have put it into practice."
+  "ABOUT_ME_DESCRIPTION_3": "I have experience developing pages in a Web Design and Development Agency, where I have developed various landings and have learned a lot about SEO optimization and have put it into practice.",
+
+  "PROJECTS_SEO_TITLE": "Projects - Pol Cortés",
+  "PROJECTS_SEO_DESCRIPTION": "There you will find some of the projects I have done.",
+  "PROJECTS_VISIT": "Visit the project",
+  "PROJECTS_F5_TITLE": "F5 Futsal - Landing",
+  "PROJECTS_F5_DESCRIPTION": "Landing page for a futsal club. I made the layout and SEO optimization.",
+  "PROJECTS_SEVERAL_TITLE": "Several.pro - SEO and Wordpress management",
+  "PROJECTS_SEVERAL_DESCRIPTION": "I improved the SEO from this company's page by fixing the DOM semantics, adding specific schema.org scripts and creating coherent meta descriptions for each page with the YoastSEO plugin for Wordpress. In addition, I implemented and corrected some sections."
 }
